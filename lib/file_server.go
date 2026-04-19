@@ -35,7 +35,6 @@ func Start(port string) (addr string, err error) {
 	if err != nil {
 		return "", fmt.Errorf("端口 %s 被占用: %v", port, err)
 	}
-	ln.Close()
 
 	http.HandleFunc("/file", fileHandler)
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
