@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/wcj-go/wcj-http/lib"
+	"github.com/wyzzgzhdcxy/wcj-go-http/lib"
 )
 
 func main() {
